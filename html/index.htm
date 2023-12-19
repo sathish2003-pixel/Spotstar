@@ -18,8 +18,7 @@
          background-image:url(../images/colorful-abstract-nebula-space-background.jpg);
         background-repeat:no-repeat;
         background-size:cover; 
-        filter: blur(8px);
-        -webkit-filter: blur(8px);
+        
     }
 
  .card {
@@ -33,13 +32,40 @@
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
  }
   
+
+ .card-img-top {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.btn {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.container:hover .card-img-top {
+  opacity: 0.5;
+}
+
+.container:hover .btn {
+  opacity: 1;
+}
 </style>
 </head>
 <body>
     <nav class="navbar"> 
          <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="../images/spotstar-high-resolution-logo-transparent.png" alt="Bootstrap" width="150">
+            <img src="../images/spotstar-high-resolution-logo-transparent.png"  alt="Bootstrap" width="150">
           </a>
         </div>
       
@@ -61,7 +87,7 @@
               <div class="card pt-5"  data-aos="fade-up" data-aos-duration="1000 style="width: 12rem;">
                 <img src="../images/rajiniedit.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h3 class="card-text text-center">Movie</h3>
+                  <button class="btn btn-info">Movie</h3>
                 </div>
               </div>
               </div>

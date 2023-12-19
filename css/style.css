@@ -1,7 +1,7 @@
 body {
     background-color: dark;
     background-image: 
-        radial-gradient(at 47% 33%, hsl(180.00, 1%, 1%) 0, transparent 59%);
+        radial-gradient(at 47% 33%, hsl(180.00, 1%, 1%) 0, transparent 59%),;
         background-repeat:no-repeat;
         background-size: cover; 
 }
