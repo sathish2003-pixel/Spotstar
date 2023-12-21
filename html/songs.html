@@ -15,13 +15,31 @@
     <style>
       body{
         overflow-x:hidden;
-        background-image: url(../images/beautiful-rendering-colorful-circles.jpg);
+        background-image: url(../images/-LoppUA_9F1w-unsplash.jpg);
         background-repeat: no-repeat;
         background-size: cover;
       }
       .navbar{
         text-decoration: none;
       }
+       .card{
+        background-color: transparent;
+        border: none;
+      } 
+      @media screen and (min-width: 994px) {
+        .grid-container {
+    margin-left: 100px;
+  }
+  
+}
+@media screen and (max-width: 520px) {
+  body{
+ 
+    background-size:3000px;
+  }
+
+}
+
     </style>
 </head>
 <body>
@@ -59,7 +77,7 @@
        <!-- Side navbar started -->
        <div class="container-fluid">
        <div class="row">
-       <nav class="navbar navbar-expand-lg  container-fluid col-lg-2">
+       <nav class="navbar navbar-expand-lg   container-fluid col-lg-2"style="position: fixed;">
        
         <div class="container">
           <!-- <a class="navbar-brand" href="#">Navbar</a> -->
@@ -67,48 +85,201 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav navbar flex-column me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav nav flex-column me-auto mb-2 mb-lg-0 pb-2">
               <li class="nav-item">
-                <img src="../images/spotstar-high-resolution-logo-black-transparent.png"  alt="Bootstrap" width="150px">
-                <br>
+                <img src="../images/spotstar-high-resolution-logo-black-transparent.png"  alt="Bootstrap" width="200px">
+                <br><br>
       
-                <a class="nav-link active text-light" aria-current="page" href="#"><i class="fa-solid fa-house fa-2xl"></i>Home</a></button>
-              </li><br>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="#" style="float: left;"><i class="fa-solid fa-language fa-lg"></i>Languages</a></button>
-              </li><br>
-              <li class="nav-item">
-                <a class="nav-link text-light" style="float: right;"><i class="fa-solid fa-music fa-lg"></i>Music Directors</a>
-              </li><br>
-              <li class="nav-item">
-                <a class="nav-link text-light"><i class="fa-solid fa-music fa-lg"></i>Music Artists</a>
-              </li><br>
-              <li class="nav-item">
-                <a class="nav-link text-light"><i class="bi bi-fire"></i>Top trending 2023</a>
-              </li><br>
-              <li class="nav-item">
-                <a class="nav-link text-light"><i class="bi bi-music-note-list"></i>Melting Melodies</a>
-              </li><br>
-              <li class="nav-item">
-                <a class="nav-link text-light"><i class="fa-solid fa-drum fa-xl"></i>Folk songs</a>
-              </li><br>
+                <a class="nav-link active text-light fs-3" aria-current="page" href="#"><span class="badge rounded-pill text-bg-warning"><i class="fa-solid fa-house fa-sm"></i>Home</span></a>
+              </li>
+              <li class="nav-item pt-2">
+                <a class="nav-link text-light fs-4" href="#"><span class="badge rounded-pill text-bg-warning"><i class="fa-solid fa-language fa-sm"></i>Languages</span></a>
+              </li>
+              <li class="nav-item pt-2">
+                <a class="nav-link text-light fs-4"><span class="badge rounded-pill text-bg-warning"><i class="fa-solid fa-music fa-sm"></i>Music Directors</span></a>
+              </li>
+              <li class="nav-item pt-2">
+                <a class="nav-link text-light fs-4"><span class="badge rounded-pill text-bg-warning"><i class="fa-solid fa-music fa-sm"></i>Music Artists</span></a>
+              </li>
+              <li class="nav-item pt-2">
+                <a class="nav-link text-light fs-4"><span class="badge rounded-pill text-bg-warning"><i class="bi bi-fire fa-sm"></i>Top trending 2023</span></a>
+              </li>
+              <li class="nav-item pt-2">
+                <a class="nav-link text-light fs-4"><span class="badge rounded-pill text-bg-warning"><i class="bi bi-music-note-list fa-sm"></i>Melting Melodies</span></a>
+              </li>
+              <li class="nav-item pt-2">
+                <a class="nav-link text-light fs-4"><span class="badge rounded-pill text-bg-warning"><i class="fa-solid fa-drum fa-sm"></i>Folk songs</span></a>
+              </li>
             </ul>
            
           </div>
         </div>
       </nav>
       <!-- Side navbar ended -->
-      <div class="container-fluid   col-lg-6 ">
+      <div class="container-fluid col-lg-10" style="padding-top: 100px;">
         
         <form class="d-flex position-absolute top-0 start-50 translate-middle-x">
-      
           <div class="input-group-text"><input class="form-control me-2" type="search"  placeholder="Search" aria-label="Search"><i class="fa-solid fa-magnifying-glass fa-xl"></i></div>
-  
         </form>
-        
+
+
+
+
+        <style>
+          .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            
+            padding: 10px;
+            column-gap: 20px;
+            row-gap: 20px;
+          }
+          .grid-item {
+            /* background-color: rgba(255, 255, 255, 0.8); */
+            /* border: 1px solid rgba(0, 0, 0, 0.8); */
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+          }
+          </style>
+        <div class="grid-container">
+          <div class="grid-item">
+            <div class="card" style="width: 20rem;height:auto; width: 200px;">
+              <img src="../images/ilayrajacover.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="card" style="width: 20rem;height:auto; width: 200px;">
+              <img src="../images/yuvan3.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="card" style="width: 20rem;height:auto; width: 200px;">
+              <img src="../images/hariharan4.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="card" style="width: 20rem;height:auto; width: 200px;">
+              <img src="../images/kschitra tamil.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="card" style="width: 20rem;height:auto; width: 200px;">
+              <img src="../images/dhuvani banishili hindi.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="card" style="width: 20rem;height:auto; width: 200px;">
+              <img src="../images/arman malik hindi.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="card" style="width: 20rem;height:auto; width: 200px;">
+              <img src="../images/atif aslam hindi.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="card" style="width: 20rem;height:auto; width: 200px;">
+              <img src="../images/alka yannik hindi.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="card" style="width: 20rem;height:auto; width: 200px;">
+              <img src="../images/dj snake enlish.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              </div>
+            </div>
+          </div>
+           <div class="grid-item">
+            <div class="card" style="width: 20rem;height:auto; width: 200px;">
+              <img src="../images/alanwalker english.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="card" style="width: 20rem;height:auto; width: 200px;">
+              <img src="../images/billie eilish english.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="card" style="width: 20rem;height:auto; width: 200px;">
+              <img src="../images/Justin bieber english.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="card" style="width: 20rem;height:auto; width: 200px;">
+              <img src="../images/ksharishankarmalyama.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="card" style="width: 20rem;height:auto; width: 200px;">
+              <img src="../images/shithara.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="card" style="width: 20rem;height:auto; width: 200px;">
+              <img src="../images/geethamadhuri.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="card" style="width: 20rem;height:auto; width:200px;">
+              <img src="../images/vidyasagar.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
 
       </div>
-        <div class="container-fluid text-light col-lg-4">
+        <!-- <div class="container-fluid text-light col-lg-1"> -->
           <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni consequatur modi exercitationem assumenda temporibus officiis accusamus id, consequuntur ut sequi dolores mollitia fuga dolorum atque repudiandae illo facilis cum quas? -->
           </div>
       </div>
