@@ -5,73 +5,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="./bootstrap-5.2.2-dist/css/bootstrap.min.css"> 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--AOS Cdn-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="../css/style.css" rel="stylesheet">
+    <link rel="icon"  href="/favicon.ico"/>
+    <link rel="icon" type="image/png" href="./images/table.png">
+    <link rel="stylesheet" href="./bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <style>
-    
+        body{
+          background-image: url(../images/Green\ and\ White\ Photographic\ Blogger\ Bio-Link\ Website\ \(2\).png);
+            background-repeat: no-repeat;
+            background-size: cover;
+          font-family: 'Times New Roman', Times, serif;
+            color:black;
+
+}
+        .card{
+            
+            backdrop-filter: blur(7px) saturate(180%);
+    -webkit-backdrop-filter: blur(7px) saturate(180%);
+    background-color: rgba(0, 0, 0, 0.263);
+    border-radius: 12px;
+    border: 1px solid rgba(1, 1, 2, 0.3);
+            border-color: aliceblue;
+            color:palegreen;
+            transform-style: preserve-3d;
+            backface-visibility: hidden;
+           box-shadow: inset 2px 2px 10px rgba(0,0,0,1),
+          inset -3px -3px 10px rgba(157, 63, 63, 0.6); 
+          background-color: #212121;
+        }
+        
+        input{
+          
+  width: 245px;
+  min-height: 45px;
+  color: #fff;
+  outline: none;
+  transition: 0.35s;
+  padding: 0px 7px;
+  background-color: #212121;
+  border-radius: 6px;
+  border: 2px solid #212121;
+  box-shadow: 6px 6px 10px rgba(0,0,0,1),
+  1px 1px 10px rgba(255, 255, 255, 0.6);
+  font-size: 20px;
+        }
+        .input::placeholder {
+  color: #999;
+}
+
+.input:focus.input::placeholder {
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.input:focus {
+  transform: scale(1.05);
+  box-shadow: 6px 6px 10px rgba(0,0,0,1),
+  1px 1px 10px rgba(255, 255, 255, 0.6),
+  inset 2px 2px 10px rgba(0,0,0,1),
+  inset -1px -1px 5px rgba(255, 255, 255, 0.6);
+}
+
+
+.btn {
+  padding: 10px 35px;
+  cursor: pointer;
+  background-color: #212121;
+  border-radius: 6px;
+  border: 2px solid #212121;
+  box-shadow: 6px 6px 10px rgba(0,0,0,1),
+  1px 1px 10px rgba(255, 255, 255, 0.6);
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  transition: 0.35s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 6px 6px 10px rgba(0,0,0,1),
+  1px 1px 10px rgba(255, 255, 255, 0.6),
+  inset 2px 2px 10px rgba(0,0,0,1),
+  inset -1px -1px 5px rgba(255, 255, 255, 0.6);
+}
+
+.btn:focus {
+  transform: scale(1.05);
+  box-shadow: 6px 6px 10px rgba(0,0,0,1),
+  1px 1px 10px rgba(255, 255, 255, 0.6),
+  inset 2px 2px 10px rgba(0,0,0,1),
+  inset -1px -1px 5px rgba(255, 255, 255, 0.6);
+}
 
     </style>
 </head>
 <body>
-  <!-- <nav class="navbar">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="../images/spotstar-high-resolution-logo-black-transparent.png" alt="Bootstrap" width="200" height="50">
-      </a>
-    </div>
-  </nav> -->
-    <section class="vh-100 gradient-custom">
-        <div class="container  py-5 h-100">
-          <div class="row d-flex justify-content-center align-items-center h-100 pb-5">
-            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-              <div class="card text-light" style="border-radius: 1rem;">
-                <div class="card-body text-center">
-                  <div class="mb-md-5 mt-md-4">      
-                    <h2 class="fw-bold mb-2 text-uppercase">
-                    <img src="../images/spotstar-high-resolution-logo-transparent.png" class="img-fluid" width="300px"></h2>
-                    <p class="text-white-50 mb-5">Please enter your Email ID and password!</p>
-                    
-               
-                  
-                   
-                    
-                      <div class="form-outline form-white mb-4">
-                        <h4> <label class="form-label" for="typeEmailX">Phone number</label></h4>
-                      <input type="number" id="typeEmailX" class="form-control form-control-lg" />
+  <nav class="navbar">
+    <a class="navbar-brand" href="#">
+      <img src="../images/cropimage-PhotoRoom.png-PhotoRoom.png" style="background: transparent;" width="250px"  alt="">
+    </a>
+  </nav>
+   <div class="container pt-4 ">
+    <div class="row pt-4">
+        <div class="col-lg-12 pt-5 align-items-center justify-content-center d-flex">
 
-                    </div>
-                    
-                      <div class="form-outline form-white mb-4">
-                        <h4><label class="form-label" for="typePasswordX">Password</label></h4>
-                        <input type="password" id="typePasswordX" class="form-control form-control-lg" />
-                       
-                    </div>
-                  
-                  
-                    <p class="large mb-5 pb-lg-2"><a class="text-white" href="#!">Forgot password?</a></p>
-                    <p class="large mb-5 pb-lg-2"><a class="text-white" href="./signin.html">Sign-up</a></p>
-      
-                    <a href="./index.htm"><button class="btn btn-light btn-lg px-5" type="submit">Login</button></a>
-      
-                    <div class="d-flex justify-content-center text-center mt-4 pt-1">
-                      <a href="#!" class="text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
-                      <a href="#!" class="text-white"><i class="fab fa-twitter fa-lg mx-4 px-2"></i></a>
-                      <a href="https://mail.google.com/mail/u/0/#inbox" class="text-white"><i class="fab fa-google fa-lg"></i></a>
-                    </div>
-      
-                  </div> 
-                </div>
-              </div>
-            </div>
-          </div>
+<div class="card justify-content-center align-items-center text-info" style="width: 25rem;height: 38rem;">
+      <div class="card-body">
+      <form>
+      <h1 class="card-title text-light pt-4"style="text-align:center;"><b>Login</b></h1><hr><br>
+      <div class="row pt-4 pb-3 my-1">
+        <div class="col">
+          <input type="text" class="input" placeholder="Name">
         </div>
-      </section>
-</body>
+      </div>
+      <div class="row pt-5 my-1">
+        <div class="col">
+          <input type="password" class="input" placeholder="Password">
+        </div>
+      </div>        
+      <a href="../html/index.html" class="btn btn-dark px-5 mt-5 mx-5 px-5">Log-in</a>
+      <h4 class="text-light pt-4"><br>Are you a new user<a href="../html/signin.html" class="text-info" style="text-decoration: none;">Sign-up</a></h4><br><h5 class="px-5 mx-2 pb-5"><a href="../html/signin.html" class="text-danger" style="text-decoration: none;"> Forget password?</a></h5>
+    </div>
+  </form>
+  </div>
+        </div>
+    </div>
+   </div>
+.</body>
 </html>
