@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-sale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -13,15 +13,26 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-         body{
-        overflow-x:hidden;
-        background-image: url(../images/Musiqo\ Music\ GoDaddy\ Store\ Image\ \(1\).png);
-        background-repeat: no-repeat;
-        background-size: 2500px;
+      body{
+        background-image: url(../images/black\ bg\ \(2\).jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+          font-family: 'Times New Roman', Times, serif;
+            color:black;
+
       }
-      
-      
-      .card-img-top {
+      .navbar{
+        text-decoration: none;
+      }
+       .card{
+        backdrop-filter: blur(6px) saturate(180%);
+    -webkit-backdrop-filter: blur(6px) saturate(180%);
+    background-color: rgba(254, 254, 254, 0.26);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.card-img-top {
   /* padding: 50px;
   background-color: green; */
   transition: transform .2s;
@@ -36,166 +47,181 @@
   transform: scale(1.4); 
   cursor: pointer;
 }
+      @media screen and (min-width: 994px) {
+        .grid-container {
+    margin-left: 100px;
+  }
+  
+}
+@media screen and (max-width: 520px) {
+  body{
+ 
+    background-size:3000px;
+  }
+
+}
+
     </style>
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row">
-       
-       <nav class="navbar navbar-dark fixed-top">
-         <div class="container-fluid">
-           <img src="../images/cropimage-PhotoRoom.png-PhotoRoom.png"  alt="Bootstrap" width="200px">
-                   
-           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-             <span class="navbar-toggler-icon"></span>
-           </button>
-           <style>
-             .offcanvas-start{
-               backdrop-filter: blur(9px) saturate(180%);
-     -webkit-backdrop-filter: blur(9px) saturate(180%);
-     background-color: rgba(76, 105, 170, 0.18);
-     border-radius: 12px;
-     border: 1px solid rgba(255, 255, 255, 0.125);
- 
-             }
-           </style>
-           <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-             <div class="offcanvas-header">
-               <img src="../images/cropimage-PhotoRoom.png-PhotoRoom.png"  alt="Bootstrap" width="200px">
-                   
-               
-               <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-             </div>
-             <div class="offcanvas-body">
-             
-               <ul class="navbar-nav nav flex-column me-auto mb-2 mb-lg-0 pb-2">
-               
-         
-                   <a class="nav-link active text-light fs-3" aria-current="page" href="#"><i class="fa-solid fa-house fa-sm"></i>Home</span></a>
-                 </li>
-                 <li class="nav-item pt-2">
-                   <a class="nav-link text-light fs-4" href="#"><i class="fa-solid fa-language fa-sm"></i>Languages</span></a>
-                 </li>
-                 <li class="nav-item pt-2">
-                   <a class="nav-link text-light fs-4"href="../html/musicdirector.html"><i class="fa-solid fa-music fa-sm"></i>Music Directors</span></a>
-                 </li>
-                 <li class="nav-item pt-2">
-                   <a class="nav-link text-light fs-4" href="../html/singers.html" class="fa-solid fa-music fa-sm"></i>Music Artists</span></a>
-                 </li>
-                 <li class="nav-item pt-2">
-                   <a class="nav-link text-light fs-4"><i class="bi bi-fire fa-sm"></i>Top trending 2023</span></a>
-                 </li>
-                 <li class="nav-item pt-2">
-                   <a class="nav-link text-light fs-4"><i class="bi bi-music-note-list fa-sm"></i>Melting Melodies</span></a>
-                 </li>
-                 <li class="nav-item pt-2">
-                   <a class="nav-link text-light fs-4"><i class="fa-solid fa-drum fa-sm"></i>Folk songs</span></a>
-                 </li>
-               </ul>
-              
-              
-             </div>
-           </div>
-         </div>
-       </nav>
-       <!-- Side navbar ended -->
-       <div class="container col-lg-12" style="padding-top: 100px;">
-         
-         <form class="d-flex position-absolute top-0 start-50 translate-middle-x">
-           <div class="input-group-text"><input class="form-control me-2" type="search"  placeholder="Search" aria-label="Search"><i class="fa-solid fa-magnifying-glass fa-xl"></i></div>
-         </form>
- 
- 
- 
- 
-         <style>
-            .card{
-        background-color: transparent;
-        border: none;
+          <!-- Side navbar started -->
+       <div class="container-fluid">
+       <div class="row">
+      
+      <nav class="navbar navbar-dark fixed-top">
+        <div class="container-fluid">
+          <img src="../images/final3logo.png" style="background: transparent;" width="150px"  alt="">  
+          <form class="d-flex position-absolute top-0 start-50 translate-middle-x">
+            <div class="input-group-text"><input class="form-control me-2" type="search"  placeholder="Search" aria-label="Search"><i class="fa-solid fa-magnifying-glass fa-xl"></i></div>
+          </form>     
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <style>
+            .offcanvas-start{
+              backdrop-filter: blur(9px) saturate(180%);
+    -webkit-backdrop-filter: blur(9px) saturate(180%);
+    background-color: rgba(76, 105, 170, 0.18);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+
             }
-           .grid-container {
-             display: grid;
-             grid-template-columns: auto auto auto;
-             padding: 10px;
-             row-gap: 60px;
-             column-gap:normal;
+          </style>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <img src="../images/final3logo.png" style="background: transparent;" width="150px"  alt="">  
+                  
+              
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
             
-  padding-top:100px;
-           }
-           .grid-item {
-             /* background-color: rgba(255, 255, 255, 0.8); */
-             /* border: 1px solid rgba(0, 0, 0, 0.8); */
-            
-             font-size: 30px;
-             text-align: center;
-             margin-left: auto;
-            margin-right: auto;
-           }
-           </style>
-         <div class="grid-container">
-           <div class="grid-item">
-             <div class="card" style="width: 20rem;height:auto; width: 200px;">
-         <a href="../html/tamilsongs.html"><img src="../images/tamil logoo.png" class="card-img-top" alt="..."></a>
-               <div class="card-body">
-                 <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-               </div>
-             </div>
-           </div>
-          
-           <div class="grid-item">
-             <div class="card" style="width: 20rem;height:auto; width: 200px;">
-              <a href="../html/telugusongs.html"><img src="../images/telugu logoo.png" class="card-img-top" alt="..."></a>
-               <div class="card-body">
-                 <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-               </div>
-             </div>
-           </div>
-           <div class="grid-item">
-             <div class="card" style="width: 20rem;height:auto; width: 200px;">
-              <a href="../html/malayalamsongs.html"><img src="../images/malayalm logoo 2.png" class="card-img-top" alt="..."></a>
-               <div class="card-body">
-                 <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-               </div>
-             </div>
-           </div>
-           <div class="grid-item">
-             <div class="card" style="width: 20rem;height:auto; width: 200px;">
-              <a href="../html/kannadamsongs.html"><img src="../images/kannadam logoo.png" class="card-img-top" alt="..."></a>
-               <div class="card-body">
-                 <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-               </div>
-             </div>
-           </div>
-           <div class="grid-item">
-            <div class="card" style="width: 20rem;height:auto; width: 200px;">
-              <a href="../html/hindisongs.html"><img src="../images/hindi logoo.png" class="card-img-top" alt="..."></a>
+              <ul class="navbar-nav nav flex-column me-auto mb-2 mb-lg-0 pb-2">
+              
+        
+                  <a class="nav-link active text-light fs-3" aria-current="page" href="../html/songs.html"><i class="fa-solid fa-house fa-sm"></i>Home</span></a>
+                </li>
+                <li class="nav-item pt-2">
+                  <a class="nav-link active text-warning active fs-4" href="../html/language.html"><i class="fa-solid fa-language fa-sm"></i>Languages</span></a>
+                </li>
+                <li class="nav-item pt-2">
+                  <a class="nav-link text-light fs-4" href="../html/musicdirector.html"><i class="fa-solid fa-music fa-sm"></i>Music Directors</span></a>
+                </li>
+                <li class="nav-item pt-2">
+                  <a class="nav-link text-light fs-4" href="../html/singers.html"><i class="fa-solid fa-music fa-sm"></i>Music Artists</span></a>
+                </li>
+                <li class="nav-item pt-2">
+                  <a class="nav-link text-light fs-4" href="../html/toptrend2023songs.html"><i class="bi bi-fire fa-sm"></i>Top trending 2023</span></a>
+                </li>
+                <li class="nav-item pt-2">
+                  <a class="nav-link text-light fs-4" href="../html/meltingmelodysongs.html"><i class="bi bi-music-note-list fa-sm"></i>Melting Melodies</span></a>
+                </li>
+                <li class="nav-item pt-2">
+                  <a class="nav-link text-light fs-4" href="../html/folksongs.html"><i class="fa-solid fa-drum fa-sm"></i>Folk songs</span></a>
+                </li>
+              </ul>
+             
+             
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Side navbar ended -->
+      <div class="container col-lg-12" style="padding-top: 100px;">
+        
+       
+
+
+
+
+        <style>
+          .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            padding-top: 80px;
+            column-gap: 20px;
+            row-gap: 20px;
+          }
+          .grid-item {
+            /* background-color: rgba(255, 255, 255, 0.8); */
+            /* border: 1px solid rgba(0, 0, 0, 0.8); */
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+          }
+          </style>
+        <div class="grid-container">
+          <div class="grid-item">
+            <div class="card" style="width: 26rem;height:auto; width: 250px;">
+              <a href="../html/tamilsongs.html">
+              <img src="../images/tamil logoo.png" class="card-img-top pt-4 my-4" alt="..." style="width: 150px;">
+              </a>
               <div class="card-body">
                 <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
               </div>
             </div>
           </div>
           <div class="grid-item">
-            <div class="card" style="width: 20rem;height:auto; width: 200px;">
-              <a href="../html/englishsonfs.html"><img src="../images/english logoo.png" class="card-img-top" alt="..."></a>
+            <div class="card" style="width: 26rem;height:auto; width: 250px;">
+              <a href="../html/malayalamsongs.html">
+              <img src="../images/malayalam logoo.png" class="card-img-top pt-4 my-4" alt="..."style="width: 150px;"></a>
               <div class="card-body">
                 <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
               </div>
             </div>
           </div>
-           
-         </div>
- 
- 
- 
- 
- 
- 
-       </div>
-         <!-- <div class="container-fluid text-light col-lg-1"> -->
-           <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni consequatur modi exercitationem assumenda temporibus officiis accusamus id, consequuntur ut sequi dolores mollitia fuga dolorum atque repudiandae illo facilis cum quas? -->
-           </div>
-       </div>
-       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+          <div class="grid-item">
+            <div class="card" style="width: 26rem;height:auto; width: 250px;">
+              <a href="../html/telugusongs.html">        
+              <img src="../images/telugu logoo.png" class="card-img-top pt-4 my-4" alt="..."style="width: 150px;"></a>
+              <div class="card-body">
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="card" style="width: 26rem;height:auto; width: 250px;">
+              <a href="../html/hindisongs.html">
+              <img src="../images/hindi logoo.png" class="card-img-top pt-4 my-4" alt="..."style="width: 150px;"></a>
+              <div class="card-body">
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="card" style="width: 26rem;height:auto; width: 250px;">
+              <a href="../html/kannadamsongs.html">
+              <img src="../images/kannadam logoo.png" class="card-img-top pt-4 my-4" alt="..." style="width: 150px;"></a>
+              <div class="card-body">
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="card" style="width: 26rem;height:auto; width: 250px;">
+              <a href="../html/englishsongs.html">
+              <img src="../images/english logoo.png" class="card-img-top pt-4 my-4" alt="..." style="width: 150px;"></a>
+              <div class="card-body">
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>
+
+
+
+
+
+
+      </div>
+        <!-- <div class="container-fluid text-light col-lg-1"> -->
+          <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni consequatur modi exercitationem assumenda temporibus officiis accusamus id, consequuntur ut sequi dolores mollitia fuga dolorum atque repudiandae illo facilis cum quas? -->
+          </div>
+      </div>
+      
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-</body>
+      </body>
 </html>
