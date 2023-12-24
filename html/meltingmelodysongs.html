@@ -15,11 +15,15 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
       body{
-        overflow-x:hidden;
+        /* overflow-x:hidden;
         background: rgb(80,81,83);
         background: linear-gradient(130deg, rgba(80,81,83,1) 0%, rgba(5,6,8,1) 100%, rgba(77,78,80,1) 100%);
         background-repeat:repeat;
-        background-size:cover
+        background-size:cover */
+        background-image: url(../images/black\ bg\ \(2\).jpg);
+       background-size: cover;
+       background-repeat: repeat;
+     
             }
       .navbar{
         text-decoration: none;
@@ -66,6 +70,35 @@ border-color:black;
   border-radius:20px;
   
 }
+
+
+.cards{
+  backdrop-filter: blur(6px) saturate(180%);
+    -webkit-backdrop-filter: blur(6px) saturate(180%);
+    background-color: rgba(239, 241, 243, 0.54);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+
+.formbg{
+      backdrop-filter: blur(4px) saturate(180%);
+    -webkit-backdrop-filter: blur(4px) saturate(180%);
+    background-color: rgba(239, 241, 243, 0.28);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+      width: 400px;
+      margin-left: 300px;
+      align-items: center;
+      justify-content: center;
+     
+    
+    }
+    .input-text{
+      background-color: transparent;
+      border: 1px solid #131313;
+      font-size: 20px;
+    }
     </style>
 </head>
 <body>
@@ -74,7 +107,7 @@ border-color:black;
         <div class="container-fluid">
           <img src="../images/final3logo.png" style="background: transparent;" width="150px"  alt="">        
           <form class="d-flex  top-0 start-50 translate-middle-x">
-            <div class="input-group-text"><input class="form-control me-2" type="search"  placeholder="Search" aria-label="Search"><i class="fa-solid fa-magnifying-glass fa-xl"></i></div>
+            <div class="input-group-text formbg"><input class="form-control me-2 input-text" type="search"  placeholder="Search" aria-label="Search"><i class="fa-solid fa-magnifying-glass fa-xl"></i></div>
           </form>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -117,82 +150,96 @@ border-color:black;
       </nav>
       <!-- Side navbar ended -->
     
-      <div class="container-fluid col-lg-12" style="padding-top: 100px;">
+      <div class="container col-lg-10" style="padding-top: 150px;">
         <div class="row">
-          <table class="table table-borderless table-sm" style="font-family: 'Times New Roman', Times, serif;font-size: 20px;text-decoration: solid;">
-            <thead>
-              <tr>
-               
-            </thead>
-            <tbody class="tbody">
-              <tr>
-                <td style="background-color: transparent;color: aliceblue;">Arabu naadu</td>
-                <td style="background-color: transparent;color: aliceblue;">Thottal poo malarum</td>
-                <td style="background-color: transparent;color: aliceblue;">Haricharan,Yuvan</td>
-               <td style="background-color: transparent;color: aliceblue;"><audio src="../audio video/Audio sample.mp3" class="player" controls></audio></td>
-              </tr>
-              <tr>
-            <td style="background-color: transparent;color: aliceblue;">Arabu naadu</td>
-                <td style="background-color: transparent;color: aliceblue;">Thottal poo malarum</td>
-                <td style="background-color: transparent;color: aliceblue;">Haricharan,Yuvan</td>
-               <td style="background-color: transparent;color: aliceblue;"><audio src="../audio video/Audio sample.mp3" class="player" controls></audio></td>
-              </tr>
-              <tr>
-            <td style="background-color: transparent;color: aliceblue;">Arabu naadu</td>
-                <td style="background-color: transparent;color: aliceblue;">Thottal poo malarum</td>
-                <td style="background-color: transparent;color: aliceblue;">Haricharan,Yuvan</td>
-               <td style="background-color: transparent;color: aliceblue;"><audio src="../audio video/Audio sample.mp3" class="player" controls></audio></td>
-              </tr>
-              <tr>
-                <td style="background-color: transparent;color: aliceblue;">Arabu naadu</td>
-                <td style="background-color: transparent;color: aliceblue;">Thottal poo malarum</td>
-                <td style="background-color: transparent;color: aliceblue;">Haricharan,Yuvan</td>
-               <td style="background-color: transparent;color: aliceblue;"><audio src="../audio video/Audio sample.mp3" class="player" controls></audio></td>              </tr>
-              <tr>
-            <td style="background-color: transparent;color: aliceblue;">Arabu naadu</td>
-                <td style="background-color: transparent;color: aliceblue;">Thottal poo malarum</td>
-                <td style="background-color: transparent;color: aliceblue;">Haricharan,Yuvan</td>
-               <td style="background-color: transparent;color: aliceblue;"><audio src="../audio video/Audio sample.mp3" class="player" controls></audio></td>
-              </tr>
-              <tr>
-            <td style="background-color: transparent;color: aliceblue;">Arabu naadu</td>
-                <td style="background-color: transparent;color: aliceblue;">Thottal poo malarum</td>
-                <td style="background-color: transparent;color: aliceblue;">Haricharan,Yuvan</td>
-               <td style="background-color: transparent;color: aliceblue;"><audio src="../audio video/Audio sample.mp3" class="player" controls></audio></td>
-              </tr>
-              <tr>
-            <td style="background-color: transparent;color: aliceblue;">Arabu naadu</td>
-                <td style="background-color: transparent;color: aliceblue;">Thottal poo malarum</td>
-                <td style="background-color: transparent;color: aliceblue;">Haricharan,Yuvan</td>
-               <td style="background-color: transparent;color: aliceblue;"><audio src="../audio video/Audio sample.mp3" class="player" controls></audio></td>
-              </tr>
-              <tr>
-            <td style="background-color: transparent;color: aliceblue;">Arabu naadu</td>
-                <td style="background-color: transparent;color: aliceblue;">Thottal poo malarum</td>
-                <td style="background-color: transparent;color: aliceblue;">Haricharan,Yuvan</td>
-               <td style="background-color: transparent;color: aliceblue;"><audio src="../audio video/Audio sample.mp3" class="player" controls></audio></td>
-              </tr>
-              <tr>
-            <td style="background-color: transparent;color: aliceblue;">Arabu naadu</td>
-                <td style="background-color: transparent;color: aliceblue;">Thottal poo malarum</td>
-                <td style="background-color: transparent;color: aliceblue;">Haricharan,Yuvan</td>
-               <td style="background-color: transparent;color: aliceblue;"><audio src="../audio video/Audio sample.mp3" class="player" controls></audio></td>
-              </tr>
-              <tr>
-            <td style="background-color: transparent;color: aliceblue;">Arabu naadu</td>
-                <td style="background-color: transparent;color: aliceblue;">Thottal poo malarum</td>
-                <td style="background-color: transparent;color: aliceblue;">Haricharan,Yuvan</td>
-               <td style="background-color: transparent;color: aliceblue;"><audio src="../audio video/Audio sample.mp3" class="player" controls></audio></td>
-              </tr>
-              <tr>
-            <td style="background-color: transparent;color: aliceblue;">Arabu naadu</td>
-                <td style="background-color: transparent;color: aliceblue;">Thottal poo malarum</td>
-                <td style="background-color: transparent;color: aliceblue;">Haricharan,Yuvan</td>
-               <td style="background-color: transparent;color: aliceblue;"><audio src="../audio video/Audio sample.mp3" class="player" controls></audio></td>
-              </tr>
-                  </tbody>
-          </table>
-      
+
+          <div class="cards mx-5 pt-4" style="width: 70rem;height:30rem;">
+           
+            <div class="card-body">
+              <table class="table table-borderless table-sm" style="font-family: 'Times New Roman', Times, serif;font-size: 20px;">
+                <thead>
+                  <tr>
+                    <td style="background-color: transparent;color: aliceblue;">Title</td>
+                    <td style="background-color: transparent;color: aliceblue;">Movie</td>
+                    <td style="background-color: transparent;color: aliceblue;">Music Artist</td>
+                    <td style="background-color: transparent;color: aliceblue;display: flex;">Song</td>
+                   </tr>
+                </thead>
+                <tbody class="tbody">
+                  <tr>
+                    <td style="background-color: transparent;color: aliceblue;">Arabu nadu</td>
+                    <td style="background-color: transparent;color: aliceblue;">Thootal poo malarum</td>
+                    <td style="background-color: transparent;color: aliceblue;">Haricharan,Yuvan</td>
+                   <td style="background-color: transparent;color: aliceblue;"><audio src="../audio video/Audio sample.mp3" class="player" controls></audio></td>
+                  </tr>
+                  <tr>
+                <td style="background-color: transparent;color: aliceblue;">Telephone manipol</td>
+                    <td style="background-color: transparent;color: aliceblue;">Indian</td>
+                    <td style="background-color: transparent;color: aliceblue;">Hariharan,Harini</td>
+                   <td style="background-color: transparent;color: aliceblue;"><audio src="../audio video/Audio sample.mp3" class="player" controls></audio></td>
+                  </tr>
+                  <tr>
+                <td style="background-color: transparent;color: aliceblue;">Ennavale</td>
+                    <td style="background-color: transparent;color: aliceblue;">Kadhalan</td>
+                    <td style="background-color: transparent;color: aliceblue;">Unnikrishnan</td>
+                   <td style="background-color: transparent;color: aliceblue;"><audio src="../audio video/Audio sample.mp3" class="player" controls></audio></td>
+                  </tr>
+                  <tr>
+                    <td style="background-color: transparent;color: aliceblue;">Ennake ennaka</td>
+                    <td style="background-color: transparent;color: aliceblue;">Jeans</td>
+                    <td style="background-color: transparent;color: aliceblue;">Unnikrishnan,S.P.Pallavi</td>
+                   <td style="background-color: transparent;color: aliceblue;"><audio src="../audio video/Audio sample.mp3" class="player" controls></audio></td>              </tr>
+                  <tr>
+                <td style="background-color: transparent;color: aliceblue;">Anjali anjali</td>
+                    <td style="background-color: transparent;color: aliceblue;">Duet</td>
+                    <td style="background-color: transparent;color: aliceblue;">S.P.Balasubramaniyam</td>
+                   <td style="background-color: transparent;color: aliceblue;"><audio src="../audio video/Audio sample.mp3" class="player" controls></audio></td>
+                  </tr>
+                  <tr>
+                <td style="background-color: transparent;color: aliceblue;">Irava Pagala</td>
+                    <td style="background-color: transparent;color: aliceblue;">Sujatha,Harihanan</td>
+                    <td style="background-color: transparent;color: aliceblue;">Poovelam kettuppar</td>
+                   <td style="background-color: transparent;color: aliceblue;"><audio src="../audio video/Audio sample.mp3" class="player" controls></audio></td>
+                  </tr>
+                  <tr>
+                <!-- <td style="background-color: transparent;color: aliceblue;"></td>
+                    <td style="background-color: transparent;color: aliceblue;"></td>
+                    <td style="background-color: transparent;color: aliceblue;"></td>
+                   <td style="background-color: transparent;color: aliceblue;"><audio src="../audio video/Audio sample.mp3" class="player" controls></audio></td>
+                  </tr>
+                  <tr>
+                <td style="background-color: transparent;color: aliceblue;"></td>
+                    <td style="background-color: transparent;color: aliceblue;"></td>
+                    <td style="background-color: transparent;color: aliceblue;"></td>
+                   <td style="background-color: transparent;color: aliceblue;"><audio src="../audio video/Audio sample.mp3" class="player" controls></audio></td>
+                  </tr>
+                  <tr>
+                <td style="background-color: transparent;color: aliceblue;"></td>
+                    <td style="background-color: transparent;color: aliceblue;"></td>
+                    <td style="background-color: transparent;color: aliceblue;"></td>
+                   <td style="background-color: transparent;color: aliceblue;"><audio src="../audio video/Audio sample.mp3" class="player" controls></audio></td>
+                  </tr>
+                  <tr>
+                <td style="background-color: transparent;color: aliceblue;"></td>
+                    <td style="background-color: transparent;color: aliceblue;"></td>
+                    <td style="background-color: transparent;color: aliceblue;"></td>
+                   <td style="background-color: transparent;color: aliceblue;"><audio src="../audio video/Audio sample.mp3" class="player" controls></audio></td>
+                  </tr>
+                  <tr>
+                <td style="background-color: transparent;color: aliceblue;"></td>
+                    <td style="background-color: transparent;color: aliceblue;"></td>
+                    <td style="background-color: transparent;color: aliceblue;"></td>
+                   <td style="background-color: transparent;color: aliceblue;"><audio src="../audio video/Audio sample.mp3" class="player" controls></audio></td>
+                  </tr> -->
+                      </tbody>
+              </table>
+          
+            </div>
+           
+          </div>
+
+
+        
         </div>
        
 
