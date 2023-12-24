@@ -199,12 +199,31 @@ border-color:black;
     </style>
 </head>
 <body>
-   
+   <style>
+    .formbg{
+      backdrop-filter: blur(4px) saturate(180%);
+    -webkit-backdrop-filter: blur(4px) saturate(180%);
+    background-color: rgba(239, 241, 243, 0.28);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+      width: 400px;
+      margin-left: 300px;
+      align-items: center;
+      justify-content: center;
+     
+    
+    }
+    .input-text{
+      background-color: transparent;
+      border: 1px solid #131313;
+      font-size: 20px;
+    }
+   </style>
       <nav class="navbar navbar-dark fixed-top">
         <div class="container-fluid">
           <img src="../images/final3logo.png" style="background: transparent;" width="150px"  alt="">          
           <form class="d-flex  top-0 start-50 translate-middle-x">
-            <div class="input-group-text"><input class="form-control me-2" type="search"  placeholder="Search" aria-label="Search"><i class="fa-solid fa-magnifying-glass fa-xl"></i></div>
+            <div class="input-group-text formbg"><input class="form-control me-2 input-text" type="search"  placeholder="Search" aria-label="Search"><i class="fa-solid fa-magnifying-glass fa-xl"></i></div>
           </form>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
             <span class="navbar-toggler-icon"></span>
