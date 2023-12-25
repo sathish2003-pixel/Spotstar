@@ -85,9 +85,9 @@
   border-radius: 20px;
   padding: 30px;
   margin: auto;
-  backdrop-filter: blur(8px) saturate(180%);
-    -webkit-backdrop-filter: blur(8px) saturate(180%);
-    background-color: rgba(126, 126, 146, 0.06);
+  backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    background-color: rgba(76, 105, 170, 0.18);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);
  
@@ -201,20 +201,23 @@ border-color:black;
 <body>
    <style>
     .formbg{
-      backdrop-filter: blur(4px) saturate(180%);
-    -webkit-backdrop-filter: blur(4px) saturate(180%);
-    background-color: rgba(239, 241, 243, 0.28);
+      backdrop-filter: blur(9px) saturate(180%);
+    -webkit-backdrop-filter: blur(9px) saturate(180%);
+    background-color: rgba(0, 0, 0, 0.795);
     border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
-      width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.125);   
+      width: 500px;
       margin-left: 300px;
       align-items: center;
       justify-content: center;
-     
-    
+     color: white;
     }
+    
+    input[placeholder], [placeholder], *[placeholder] {
+    color:wheat !important;
+}
     .input-text{
-      background-color: transparent;
+      background-color:transparent;
       border: 1px solid #131313;
       font-size: 20px;
     }
