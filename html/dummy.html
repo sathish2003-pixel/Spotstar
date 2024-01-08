@@ -5,48 +5,400 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="icon"  href="/favicon.ico"/>
-    <link rel="icon" type="image/png" href="./images/table.png">
-    <link rel="stylesheet" href="./bootstrap-5.2.2-dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./bootstrap-5.2.2-dist/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="../images/movie favicon 1.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--AOS Cdn-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
 <body>
-  <div id="carouselExampleDark" class="carousel carousel-dark slide">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    
+    <style>
+      body{
+        background-image: url(../images/black\ bg\ \(2\).jpg);
+         background-size: cover;
+         background-repeat: repeat;
+         
+      }
+       
+        .navbar{
+          text-decoration: none;
+        }
+       
+  .offcanvas-start{
+                backdrop-filter: blur(9px) saturate(180%);
+      -webkit-backdrop-filter: blur(9px) saturate(180%);
+      background-color: rgba(76, 105, 170, 0.18);
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.125);
+  
+              }
+              /* Grid cards starts */
+  
+    
+      .formbg{
+        backdrop-filter: blur(4px) saturate(180%);
+      -webkit-backdrop-filter: blur(4px) saturate(180%);
+      background-color: rgb(1, 10, 19);
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.125);
+        width: 400px;
+        margin-left: 300px;
+        align-items: center;
+        justify-content: center;
+       
+      
+      }
+      .input-text{
+        background-color: transparent;
+        border: 1px solid #131313;
+        font-size: 20px;
+        height: 30px;
+      }
+      .navbar{
+        background-color: black;
+      }
+      #bttn{
+        background-color: white;
+      }
+     </style>
+       <nav class="navbar navbar-dark fixed-top">
+        <div class="container-fluid">
+          <img src="../images/final3logo.png" style="background: transparent;" width="150px"  alt="">          
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <img src="../images/final3logo.png" style="background: transparent;" width="150px"  alt="">  
+              <button type="button" id="bttn" class="btn-close btn-outline-info" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav nav flex-column me-auto mb-2 mb-lg-0 pb-2">
+                  <a class="nav-link active text-warning fs-3" aria-current="page" href="../html/songs.html"><i class="fa-solid fa-house fa-sm"></i> Home</span></a>
+                </li>
+                <li class="nav-item pt-2">
+                  <a class="nav-link text-light fs-4" href="../html/movieslanguage.html"><i class="fa-solid fa-language fa-sm"></i> Languages</span></a>
+                </li>
+                <li class="nav-item pt-2">
+                  <a class="nav-link text-light fs-4" href="../html/movie director.html"><i class="fa-solid fa-circle-user fa-sm"></i> Directors</span></a>
+                </li>
+                <li class="nav-item pt-2">
+                  <a class="nav-link text-light fs-4" href="../html/singers.html"><i class="fa-solid fa-user-ninja fa-sm"></i> Actors</span></a>
+                </li>
+                <li class="nav-item pt-2">
+                  <a class="nav-link text-light fs-4" href="../html/toptrend2023songs.html"><i class="bi bi-fire fa-sm"></i> Top movies in 2023</span></a>
+                </li>
+                <li class="nav-item pt-2">
+                  <a class="nav-link text-light fs-4" href="../html/meltingmelodysongs.html"><i class="fa-solid fa-video fa-sm"></i> Action movies</span></a>
+                </li>
+                <li class="nav-item pt-2">
+                  <a class="nav-link text-light fs-4" href="../html/folksongs.html"><i class="fa-solid fa-video fa-sm"></i> Animation movies</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+        <!-- Side navbar ended -->
+  <style>
+    /* .caro-img{
+      filter: blur(2px);
+  -webkit-filter: blur(2px); */
+    }
+  </style>
+<div class="container-fluid">
+  <div class="row pt-5 mt-3">
+    <div class="col-lg-12">
+   
+     <h1>Try something else</h1>
     </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="10000">
-        <img src="../images/raid movie.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-sm-inline-block d-block d-lg-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item" data-bs-interval="2000">
-        <img src="../images/raid movie.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-sm-inline-block d-block d-lg-block">
-          <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="../images/road movie.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-sm-inline-block d-block d-lg-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
-</body>
-</html>
+  </div>
+  <style>
+    .card{
+      background-color:transparent;
+      color: white;
+      border: none;
+    }
+    .card-img-top{
+    height: 280px;
+      width: 180px;
+    }
+     
+    .button {
+  color:black;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background: linear-gradient(30deg, rgba(255, 255, 255, 0.54) 20%, rgba(255, 255, 255, 0.748) 80%);
+  transition: all 0.3s ease-in-out 0s;
+  box-shadow: rgba(193, 244, 246, 0.698) 0px 0px 0px 0px;
+  animation: 1.2s cubic-bezier(0.8, 0, 0, 1) 0s infinite normal none running pulse;
+  border: 0;
+}
+.button:is(:hover, :focus) {
+  transform: scale(1.2);
+  box-shadow: 0 0 0 25px rgba(255, 255, 255, 0);
+}
+  </style>
+  <div class="container-fluid">
+  <div class="row">
+   <div class="col-lg-2 col-sm-4  col-6">
+    <div class="card" style="width: 14rem;">
+      <img src="../images/label movie.webp" class="card-img-top"  alt="...">
+      <div class="card-body">
+        <button class="button mx-5 align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+          <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="14px"><path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" fill="currentColor"></path></svg>
+            </button>
+            
+      </div>
+    </div>
+   </div> 
+   <div class="col-lg-2 col-sm-4  col-6">
+    <div class="card" style="width: 14rem;">
+      <img src="../images/mathagam movie.webp" class="card-img-top"  alt="...">
+      <div class="card-body">
+        <button class="button mx-5 align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+          <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="14px"><path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" fill="currentColor"></path></svg>
+            </button>
+      </div>
+    </div>
+   </div> 
+   <div class="col-lg-2 col-sm-4 col-6">
+    <div class="card" style="width: 14rem;">
+      <img src="../images/kerala ceime movie.webp" class="card-img-top" style="height: 280px;width: 180px;" alt="...">
+      <div class="card-body">
+        <button class="button mx-5 align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+          <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="14px"><path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" fill="currentColor"></path></svg>
+            </button>
+      </div>
+    </div>
+   </div> 
+   <div class="col-lg-2 col-sm-4  col-6">
+    <div class="card" style="width: 14rem;">
+      <img src="../images/falimy movie.webp" class="card-img-top" style="height: 280px;width: 180px;" alt="...">
+      <div class="card-body">
+        <button class="button mx-5 align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+          <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="14px"><path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" fill="currentColor"></path></svg>
+            </button>
+      </div>
+    </div>
+   </div> 
+   <div class="col-lg-2 col-sm-4  col-6">
+    <div class="card" style="width: 14rem;">
+      <img src="../images/parking2.webp" class="card-img-top"  alt="...">
+      <div class="card-body">
+        <button class="button mx-5 align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+          <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="14px"><path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" fill="currentColor"></path></svg>
+            </button>
+      </div>
+    </div>
+   </div> 
+   <div class="col-lg-2 col-sm-4  col-6">
+    <div class="card" style="width: 14rem;">
+      <img src="../images/12th fail movie.webp" class="card-img-top"  alt="...">
+      <div class="card-body">
+        <button class="button mx-5 align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+          <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="14px"><path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" fill="currentColor"></path></svg>
+            </button>
+      </div>
+    </div>
+   </div> 
+   
+
+  
+</div>
+<!-- Next row started -->
+<div class="row" data-aos="fade-up"
+data-aos-anchor-placement="center-bottom">
+  <div class="col-lg-2 col-sm-4 col-sm-4 col-6">
+   <div class="card" style="width: 14rem;">
+     <img src="../images/avatar movie image.webp" class="card-img-top"  alt="...">
+     <div class="card-body">
+      <button class="button mx-5 align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+        <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="14px"><path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" fill="currentColor"></path></svg>
+          </button>
+     </div>
+   </div>
+  </div> 
+  <div class="col-lg-2 col-sm-4 col-sm-4 col-6">
+   <div class="card" style="width: 14rem;">
+     <img src="../images/lion king movie.webp" class="card-img-top"  alt="...">
+     <div class="card-body">
+      <button class="button mx-5 align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+        <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="14px"><path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" fill="currentColor"></path></svg>
+          </button>
+     </div>
+   </div>
+  </div> 
+  <div class="col-lg-2 col-sm-4 col-sm-4 col-6">
+   <div class="card" style="width: 14rem;">
+     <img src="../images/Titanci movie.webp" class="card-img-top" style="height: 280px;width: 180px;" alt="...">
+     <div class="card-body">
+      <button class="button mx-5 align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+        <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="14px"><path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" fill="currentColor"></path></svg>
+          </button>
+     </div>
+   </div>
+  </div> 
+  <div class="col-lg-2 col-sm-4 col-6">
+   <div class="card" style="width: 14rem;">
+     <img src="../images/guardians galaxy  movie.webp" class="card-img-top" style="height: 280px;width: 180px;" alt="...">
+     <div class="card-body">
+      <button class="button mx-5 align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+        <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="14px"><path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" fill="currentColor"></path></svg>
+          </button>
+     </div>
+   </div>
+  </div> 
+  <div class="col-lg-2 col-sm-4 col-6">
+   <div class="card" style="width: 14rem;">
+     <img src="../images/secret invasion movie.webp" class="card-img-top d-flex" alt="...">
+     <div class="card-body">
+      <button class="button mx-5 align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+        <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="14px"><path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" fill="currentColor"></path></svg>
+          </button>
+     </div>
+   </div>
+  </div> 
+  <div class="col-lg-2 col-sm-4 col-6">
+   <div class="card" style="width: 14rem;">
+     <img src="../images/black panther movie.webp" class="card-img-top"  alt="...">
+     <div class="card-body">
+      <button class="button mx-5 align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+        <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="14px"><path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" fill="currentColor"></path></svg>
+          </button>
+     </div>
+   </div>
+  </div> 
+  
+</div>
+<!-- Row ended -->
+
+<!-- row started -->
+<div class="row" data-aos="fade-up"
+data-aos-anchor-placement="center-bottom">
+  <div class="col-lg-2 col-sm-4 col-6">
+   <div class="card" style="width: 14rem;">
+     <img src="../images/sita raman.webp" class="card-img-top"  alt="...">
+     <div class="card-body">
+       <h5 class="card-title">Sita ramam</h5>
+     </div>
+   </div>
+  </div> 
+  <div class="col-lg-2 col-sm-4 col-6">
+   <div class="card" style="width: 14rem;">
+     <img src="../images/trail movie.webp" class="card-img-top"  alt="...">
+     <div class="card-body">
+       <h5 class="card-title">Trail</h5>
+     </div>
+   </div>
+  </div> 
+  <div class="col-lg-2 col-sm-4 col-6">
+   <div class="card" style="width: 14rem;">
+     <img src="../images/brahmastra movie.webp" class="card-img-top" style="height: 280px;width: 180px;" alt="...">
+     <div class="card-body">
+       <h5 class="card-title">Brahmastra</h5>
+     </div>
+   </div>
+  </div> 
+  <div class="col-lg-2 col-sm-4 col-6">
+   <div class="card" style="width: 14rem;">
+     <img src="../images/QUOUTE OF LOVE.webp" class="card-img-top" style="height: 280px;width: 180px;" alt="...">
+     <div class="card-body">
+       <h5 class="card-title">Quote of love</h5>
+     </div>
+   </div>
+  </div> 
+  <div class="col-lg-2 col-sm-4 col-6">
+   <div class="card" style="width: 14rem;">
+     <img src="../images/november story.webp" class="card-img-top d-flex" alt="...">
+     <div class="card-body">
+       <h5 class="card-title">November story</h5>
+     </div>
+   </div>
+  </div> 
+  <div class="col-lg-2 col-sm-4 col-6">
+   <div class="card" style="width: 14rem;">
+     <img src="../images/grahan.webp" class="card-img-top"  alt="...">
+     <div class="card-body">
+       <h5 class="card-title">Grahan</h5>
+     </div>
+   </div>
+  </div> 
+  
+</div>
+
+<!-- row ended -->
+<!-- row started -->
+<div class="row" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
+  <div class="col-lg-2 col-sm-4 col-6">
+   <div class="card" style="width: 14rem;">
+     <img src="../images/toy story.webp" class="card-img-top"  alt="...">
+     <div class="card-body">
+       <h5 class="card-title">Sita ramam</h5>
+     </div>
+   </div>
+  </div> 
+  <div class="col-lg-2 col-sm-4 col-6">
+   <div class="card" style="width: 14rem;">
+     <img src="../images/luca.webp" class="card-img-top"  alt="...">
+     <div class="card-body">
+       <h5 class="card-title">Trail</h5>
+     </div>
+   </div>
+  </div> 
+  <div class="col-lg-2 col-sm-4 col-6">
+   <div class="card" style="width: 14rem;">
+     <img src="../images/good dinosour.webp" class="card-img-top" style="height: 280px;width: 180px;" alt="...">
+     <div class="card-body">
+       <h5 class="card-title">Brahmastra</h5>
+     </div>
+   </div>
+  </div> 
+  <div class="col-lg-2 col-sm-4 col-6">
+   <div class="card" style="width: 14rem;">
+     <img src="../images/loop movie.webp" class="card-img-top" style="height: 280px;width: 180px;" alt="...">
+     <div class="card-body">
+       <h5 class="card-title">Quote of love</h5>
+     </div>
+   </div>
+  </div> 
+  <div class="col-lg-2 col-sm-4 col-6">
+   <div class="card" style="width: 14rem;">
+     <img src="../images/nona.webp" class="card-img-top d-flex" alt="...">
+     <div class="card-body">
+       <h5 class="card-title">November story</h5>
+     </div>
+   </div>
+  </div> 
+  <div class="col-lg-2 col-sm-4 col-6">
+   <div class="card" style="width: 14rem;">
+     <img src="../images/brave.webp" class="card-img-top"  alt="...">
+     <div class="card-body">
+       <h5 class="card-title">Grahan</h5>
+     </div>
+   </div>
+  </div> 
+  
+</div>
+<!-- row ended -->
+</div>
+
+
+
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        </body>
+  </html>
