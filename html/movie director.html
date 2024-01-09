@@ -23,11 +23,15 @@
       }
       .navbar{
         text-decoration: none;
+        background-color: black;
       }
        .card{
-       background-color: white;
-      
-    
+        backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    background-color: rgba(13, 13, 13, 0.81);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+        transition: .1s;
 }
 
 .card-img-top {
@@ -39,12 +43,15 @@
   height: 200px;
   margin: 0 auto; */
 }
-
+.card:hover{
+  border-radius: 50px;
+}
 .card-img-top:hover {
   -ms-transform: skew(1.1); 
   -webkit-transform: scale(1.4); 
   transform: scale(1.4); 
   cursor: pointer;
+  border-radius: 50px;
 }
       @media screen and (min-width: 994px) {
         .grid-container {
@@ -56,6 +63,13 @@
   body{
  
     background-size:3000px;
+  }
+  
+}
+@media screen and (max-width: 1266px) {
+  body{
+ 
+    background-size: 5000px;
   }
 
 }
@@ -164,63 +178,63 @@
       <!-- Side navbar ended -->
       <div class="container">
         <div class="row pt-5 mt-5">
-          <div class="col-lg-4 col-md-4 col-12 col-sm-6">
+          <div class="col-lg-4 col-md-4 col-12 col-sm-6 pt-5">
             <div class="card text-center">
               <a href="../html/tamilsongs.html">
               <img src="../images/james cameron.jpg" class="card-img-top pt-4 my-4" alt="...">
               </a>
               <div class="card-body">
-                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+           <h3 class="text-light">James Cameron</h3>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-4 col-12 col-sm-6">
+          <div class="col-lg-4 col-md-4 col-12 col-sm-6 pt-5">
             <div class="card text-center">
               <a href="../html/tamilsongs.html">
               <img src="../images/james wann.jpg" class="card-img-top pt-4 my-4" alt="...">
               </a>
               <div class="card-body">
-                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+           <h3 class="text-light">James Wann</h3>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-4 col-12 col-sm-6">
+          <div class="col-lg-4 col-md-4 col-12 col-sm-6 pt-5">
             <div class="card text-center">
               <a href="../html/tamilsongs.html">
               <img src="../images/loki.jpg" class="card-img-top pt-4 my-4" alt="...">
               </a>
               <div class="card-body">
-                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+           <h3 class="text-light">Lokesh Kanagaraj</h3>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-4 col-12 col-sm-6">
+          <div class="col-lg-4 col-md-4 col-12 col-sm-6 pt-5">
             <div class="card text-center">
               <a href="../html/tamilsongs.html">
               <img src="../images/sankar.jpg" class="card-img-top pt-4 my-4" alt="...">
               </a>
               <div class="card-body">
-                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+           <h3 class="text-light">Sankar</h3>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-4 col-12 col-sm-6">
+          <div class="col-lg-4 col-md-4 col-12 col-sm-6 pt-5">
             <div class="card text-center">
               <a href="../html/tamilsongs.html">
               <img src="../images/maniratnam.jpg" class="card-img-top pt-4 my-4" alt="...">
               </a>
               <div class="card-body">
-                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+           <h3 class="text-light">Maniratnam</h3>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-4 col-12 col-sm-6">
+          <div class="col-lg-4 col-md-4 col-12 col-sm-6 pt-5">
             <div class="card text-center">
               <a href="../html/tamilsongs.html">
               <img src="../images/vetrimaran.jpg" class="card-img-top pt-4 my-4" alt="...">
               </a>
               <div class="card-body">
-                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+           <h3 class="text-light">Vetrimaran</h3>
               </div>
             </div>
           </div>
