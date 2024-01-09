@@ -18,12 +18,9 @@
 <body>
     
     <style>
-      body{
-        background-image: url(../images/black\ bg\ \(2\).jpg);
-         background-size: cover;
-         background-repeat: repeat;
-         
-      }
+    body{
+      background-color: black;
+    }  
        
         .navbar{
           text-decoration: none;
@@ -33,15 +30,15 @@
                 backdrop-filter: blur(9px) saturate(180%);
       -webkit-backdrop-filter: blur(9px) saturate(180%);
       background-color: rgba(76, 105, 170, 0.18);
-      border-radius: 12px;
+      border-radius: 1px;
       border: 1px solid rgba(255, 255, 255, 0.125);
-  
+   
               }
-              /* Grid cards starts */
+  
   
     
       .formbg{
-        backdrop-filter: blur(4px) saturate(180%);
+        /* backdrop-filter: blur(4px) saturate(180%);
       -webkit-backdrop-filter: blur(4px) saturate(180%);
       background-color: rgb(1, 10, 19);
       border-radius: 12px;
@@ -51,7 +48,7 @@
         align-items: center;
         justify-content: center;
        
-      
+       */
       }
       .input-text{
         background-color: transparent;
@@ -65,38 +62,39 @@
       #bttn{
         background-color: white;
       }
+      
      </style>
        <nav class="navbar navbar-dark fixed-top">
         <div class="container-fluid">
-          <img src="../images/final3logo.png" style="background: transparent;" width="150px"  alt="">          
+          <img src="../images/final3logo.png"  width="150px"  alt="">          
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
             <div class="offcanvas-header">
-              <img src="../images/final3logo.png" style="background: transparent;" width="150px"  alt="">  
+              <img src="../images/final3logo.png"  width="150px"  alt="">  
               <button type="button" id="bttn" class="btn-close btn-outline-info" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-              <ul class="navbar-nav nav flex-column me-auto mb-2 mb-lg-0 pb-2">
-                  <a class="nav-link active text-warning fs-3" aria-current="page" href="../html/songs.html"><i class="fa-solid fa-house fa-sm"></i> Home</span></a>
+              <ul class="navbar-nav nav flex-column me-auto mb-2 mb-lg-0">
+                  <a class="nav-link active text-warning fs-4" aria-current="page" href="../html/songs.html"><i class="fa-solid fa-house fa-sm"></i> Home</span></a>
                 </li>
-                <li class="nav-item pt-2">
+                <li class="nav-item">
                   <a class="nav-link text-light fs-4" href="../html/movieslanguage.html"><i class="fa-solid fa-language fa-sm"></i> Languages</span></a>
                 </li>
-                <li class="nav-item pt-2">
+                <li class="nav-item">
                   <a class="nav-link text-light fs-4" href="../html/movie director.html"><i class="fa-solid fa-circle-user fa-sm"></i> Directors</span></a>
                 </li>
-                <li class="nav-item pt-2">
+                <li class="nav-item">
                   <a class="nav-link text-light fs-4" href="../html/movie actors.html"><i class="fa-solid fa-user-ninja fa-sm"></i> Actors</span></a>
                 </li>
-                <li class="nav-item pt-2">
+                <li class="nav-item">
                   <a class="nav-link text-light fs-4" href="../html/top movies 2023.html"><i class="bi bi-fire fa-sm"></i> Top movies in 2023</span></a>
                 </li>
-                <li class="nav-item pt-2">
+                <li class="nav-item">
                   <a class="nav-link text-light fs-4" href="../html/meltingmelodysongs.html"><i class="fa-solid fa-video fa-sm"></i> Action movies</span></a>
                 </li>
-                <li class="nav-item pt-2">
+                <li class="nav-item">
                   <a class="nav-link text-light fs-4" href="../html/animation movies.html"><i class="fa-solid fa-video fa-sm"></i> Animation movies</span></a>
                 </li>
               </ul>
@@ -105,12 +103,8 @@
         </div>
       </nav>
         <!-- Side navbar ended -->
-  <style>
-    /* .caro-img{
-      filter: blur(2px);
-  -webkit-filter: blur(2px); */
-    }
-  </style>
+  
+  
 <div class="container-fluid">
   <div class="row pt-5 mt-3">
     <div class="col-lg-12">
@@ -152,6 +146,7 @@
     </div>
   </div>
   </div>
+ 
   <style>
     .card{
       background-color:transparent;
@@ -163,10 +158,15 @@
       width: 180px;
     }
      
+h2{
+  color: white;
+}
 
   </style>
+ 
   <div class="container-fluid">
   <div class="row">
+    <h2>New Releases</h2>
    <div class="col-lg-2 col-sm-4  col-6">
     <div class="card" style="width: 14rem;">
       <img src="../images/label movie.webp" class="card-img-top"  alt="...">
@@ -220,8 +220,8 @@
   
 </div>
 <!-- Next row started -->
-<div class="row" data-aos="fade-up"
-data-aos-anchor-placement="center-bottom">
+<div class="row">
+<h2>Best of Super heros</h2>
   <div class="col-lg-2 col-sm-4 col-sm-4 col-6">
    <div class="card" style="width: 14rem;">
      <img src="../images/avatar movie image.webp" class="card-img-top"  alt="...">
@@ -275,8 +275,8 @@ data-aos-anchor-placement="center-bottom">
 <!-- Row ended -->
 
 <!-- row started -->
-<div class="row" data-aos="fade-up"
-data-aos-anchor-placement="center-bottom">
+<div class="row">
+  <h2>Love stories</h2>
   <div class="col-lg-2 col-sm-4 col-6">
    <div class="card" style="width: 14rem;">
      <img src="../images/sita raman.webp" class="card-img-top"  alt="...">
@@ -330,8 +330,8 @@ data-aos-anchor-placement="center-bottom">
 
 <!-- row ended -->
 <!-- row started -->
-<div class="row" data-aos="fade-up"
-     data-aos-anchor-placement="center-bottom">
+<div class="row">
+     <h2>Kids Corner</h2>
   <div class="col-lg-2 col-sm-4 col-6">
    <div class="card" style="width: 14rem;">
      <img src="../images/toy story.webp" class="card-img-top"  alt="...">
@@ -384,7 +384,6 @@ data-aos-anchor-placement="center-bottom">
 </div>
 <!-- row ended -->
 </div>
-
 
 
     </script>
