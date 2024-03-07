@@ -13,6 +13,75 @@
   
 </head>
 <body>
+    <script>
+        function Signup_validation()
+        {
+           //phonenumber verification
+           let number = document.getElementById("phone").value;
+           let phone_flag=false;
+           if((number>=6000000000) && (number<=9999999999))
+           {
+              phone_flag=true
+           }
+            //email varification
+           
+            let email=document.getElementById("email").value;
+            let email_flag=false;
+            let flag1=true;
+            let flag2=false;
+            for(let i=0;i<email.length;i++){
+                if((email[i]>='A')&&(email[i]<='Z')){
+                    flag1=false
+                }
+                if(email[i]=='@'){
+                    flag2=true
+                }
+            }
+            if((flag1==true)&&(flag2==true)){
+                email_flag=true
+            }
+
+        //      // PASSWORD VALIDATION
+             let password=document.getElementById("pass").value;
+            let password_flag=false
+            let size=0;
+            let upper=0;
+            let lower=0;
+            let num=0;
+            let special=0;
+            for(let i=0;i<password.length;i++){
+                size++;
+                if((password[i]>='A')&&(password[i]<='Z')){
+                    upper++;
+                }else if((password[i]>='a')&&(password[i]<='z')){
+                    lower++
+                }else if((password[i]>='0')&&(password[i]<='9')){
+                    num++;
+                }else{
+                    special++;
+                }
+            }
+            if((size>=8)&&(size<=16)&&(upper>=1)&&(lower>=1)&&(num>=1)&&(special>=1)){
+                password_flag=true
+            }
+
+          // CONFIRM PASSWORD VALIDATION
+            let confirm_password=document.getElementById("confirm").value;
+            let confirm_password_flag=false;
+            if(password==confirm_password){
+                confirm_password_flag=true
+            }
+
+
+           // FINAL VALIDATION
+            if((phone_flag==true)&&(email_flag==true)&&(password_flag==true)&&(confirm_password_flag==true)){
+                window.location.href="./index.html"
+                
+            }else{
+                 document.getElementById("error").innerHTML="Invalid!!"
+            }
+        }
+    </script>
   <nav class="navbar">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
@@ -33,15 +102,15 @@
             </div>
             <div class="input-group">
               <label for="email">Email</label>
-              <input type="email" name="username" id="username" placeholder="">
+              <input type="email" name="username" id="email" placeholder="">
           </div>
           <div class="input-group">
             <label for="phone number">Phone number</label>
-            <input type="number" name="username" id="username" placeholder="">
+            <input type="number" name="username" id="phone" placeholder="">
         </div>
             <div class="input-group">
                 <label for="password">Password</label>
-                <input type="password" name="password" id="password" placeholder="">
+                <input type="password" name="password" id="pass" placeholder="">
                 <div class="forgot">
                     <a rel="noopener noreferrer" href="#">Forgot Password ?</a>
                 </div>

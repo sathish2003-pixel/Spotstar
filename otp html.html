@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OTP Verification</title>
+</head>
+<body>
+
+<h2>OTP Verification</h2>
+
+<div id="phoneVerification">
+  <label for="phoneNumber">Enter your phone number:</label><br>
+  <input type="text" id="phoneNumber" name="phoneNumber" required><br><br>
+  <button onclick="sendOTP()">Send OTP</button>
+</div>
+
+<div id="otpVerification" style="display:none;">
+  <label for="otp">Enter OTP:</label><br>
+  <input type="text" id="otp" name="otp" required><br><br>
+  <button onclick="verifyOTP()">Verify OTP</button>
+</div>
+
+<p id="verificationStatus"></p>
+
+<script>
+// Function to generate a random 6-digit OTP
+function generateOTP() {
+  return Math.floor(100000 + Math.random() * 900000);
+}
+
+// Function to send OTP to the provided phone number
+function sendOTP() {
+  var phoneNumber = document.getElementById("phoneNumber").value;
+  var otp = generateOTP();
+  
+  // Here, you would typically make an API call to send the OTP to the provided phone number
+  // For simplicity, we'll just log the OTP to the console
+  console.log("OTP sent to " + phoneNumber + ": " + otp);
+  
+  // Show OTP verification section
+  document.getElementById("phoneVerification").style.display = "none";
+  document.getElementById("otpVerification").style.display = "block";
+}
+
+// Function to verify the entered OTP
+function verifyOTP() {
+  var enteredOTP = document.getElementById("otp").value;
+  var phoneNumber = document.getElementById("phoneNumber").value;
+  var generatedOTP = /* Here, you would get the generated OTP from your server or local storage */;
+  
+  if (enteredOTP === generatedOTP) {
+    document.getElementById("verificationStatus").innerText = "OTP Verified Successfully!";
+    // Here, you can redirect the user to the next page or perform any other action
+  } else {
+    document.getElementById("verificationStatus").innerText = "OTP Verification Failed!";
+  }
+}
+</script>
+
+</body>
+</html>
